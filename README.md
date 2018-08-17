@@ -1,0 +1,45 @@
+# Docker-Laravel Boilerplate
+
+## What is it?
+
+This is a pre-packaged setup for Laravel that deploys Docker containers for PHP, Nginx, and Maria to quickly enable local Laravel development.
+
+## Usage
+
+### Install
+
+```bash
+git clone https://github.com/mtslzr/docker-laravel-boilerplate
+cd docker-laravel-boilerplate
+```
+
+### Setup
+
+Copy the default env file.
+
+```bash
+cp laravel/.env{.example,}
+```
+
+Start up the Docker containers.
+
+```bash
+cd docker
+docker-compose up
+```
+
+Once running, you'll need to generate a key (only for the first run) with artisan.
+
+```bash
+docker exec -ti docker_app_1 php artisan key:generate
+```
+
+Website will be available at http://localhost:8080.
+
+## Specs
+
+* Docker
+* Laravel (5.6.12)
+* MariaDB (10.3.x)
+* Nginx
+* PHP (7.x)

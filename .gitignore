@@ -1,0 +1,11 @@
+/laravel/node_modules
+/laravel/public/hot
+/laravel/public/storage
+/laravel/storage/*.key
+/laravel/vendor
+.idea
+.vscode
+.vagrant
+npm-debug.log
+yarn-error.log
+.env

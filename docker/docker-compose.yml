@@ -1,0 +1,33 @@
+version: '3'
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: app.dockerfile
+    working_dir: /var/www
+    volumes:
+      - ../laravel/:/var/www
+    environment:
+      - "DB_PORT=3306"
+      - "DB_HOST=database"
+  web:
+    build:
+      context: ./
+      dockerfile: web.dockerfile
+    working_dir: /var/www
+    volumes:
+      - ../laravel:/var/www
+    ports:
+      - 8080:80
+  db:
+    image: mariadb:latest
+    volumes:
+      - dbdata:/var/lib/mysql
+    environment:
+      - "MYSQL_DATABASE=homestead"
+      - "MYSQL_USER=homestead"
+      - "MYSQL_PASSWORD=secret"
+      - "MYSQL_ROOT_PASSWORD=secret"
+
+volumes:
+  dbdata:
