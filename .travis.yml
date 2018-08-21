@@ -1,0 +1,15 @@
+sudo: required
+language: php
+
+php:
+  - 7
+
+services:
+  - docker
+
+before_script:
+  - cd docker
+  - docker-compose up
+
+script:
+  - curl -I 'localhost:8080'

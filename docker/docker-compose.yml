@@ -4,6 +4,7 @@ services:
     build:
       context: ./
       dockerfile: app.dockerfile
+    container_name: laravel-app
     working_dir: /var/www
     volumes:
       - ../laravel/:/var/www
@@ -14,6 +15,7 @@ services:
     build:
       context: ./
       dockerfile: web.dockerfile
+    container_name: laravel-web
     working_dir: /var/www
     volumes:
       - ../laravel:/var/www
@@ -21,6 +23,7 @@ services:
       - 8080:80
   db:
     image: mariadb:latest
+    container_name: laravel-db
     volumes:
       - dbdata:/var/lib/mysql
     environment:
