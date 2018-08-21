@@ -1,4 +1,5 @@
 sudo: required
+
 language: php
 
 php:
@@ -13,3 +14,7 @@ before_script:
 
 script:
   - curl -I 'localhost:8080'
+
+notifications:
+  slack:
+    secure: ISeljeAxie4yW/P94TgQE/mh+juRWTny2IjR1OYTJGO709ruj1/1t522DLSo3GntcOvTQCSOfenVih07Lf/zlk7FryMvMG4B2m9AEtsTPQwOG4PF6mShUpiFR3CiSZznTWjHQbSmI9tc7s4uLc9ZoOAhnkmitQ1Xa4LEuQQ/pjKvySryS5z4WuU6tO+lYBhCFYF50wndhle/SQEfOv1J8dnj02Q/tlWlm/2y5+VeGisidNofeRVBY91UlP8uJpm0OI6ZpYE7SdH/71YLxsQbDmEJlagfJ5x7OTDZ9ANAnp/IOxikgh7JsHlsNA0WyEaPHJRSHHJ/R2jdZ6xaTjzPusn9FULRvWTm936fW3XyYTNeOyKzZrC8jM7bJYhe6gILwSk4ywteFiI3CkLfDA4IjXZSoRqk+GmjLVnqooTjxa5GOUMHyMMqgLfiwDvq6KQlPiPpNFvXBzFiQt5uQeWc6tnjAjPSEJr/hZUhQzJ94KPPDOlqkgBpJ9Z1YpKDyVjMueUVRSpbACXkVnS72Hd+l2HtMmL9RerzFHu7bjFr2Z6tsZv6iKkaYi8hQ906lhgSmqLKbgGa3LmZDzVkKySdXBY0n0Apg6E/G7fwDhfloYHDtKRReFtaPlDbr9oO+6XsudpbfKz6Cr3EGkpT9RbrDRbAZM/egYihb2khs1oUIfo=
