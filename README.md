@@ -33,7 +33,7 @@ docker-compose up
 Once running, you'll need to generate a key (only for the first run) with artisan.
 
 ```bash
-docker exec -ti docker_app_1 php artisan key:generate
+docker exec -ti laravel-app php artisan key:generate
 ```
 
 Website will be available at http://localhost:8080.
