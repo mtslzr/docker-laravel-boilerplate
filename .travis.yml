@@ -10,7 +10,7 @@ services:
 
 before_script:
   - cd docker
-  - docker-compose up
+  - docker-compose up -d
 
 script:
   - curl -I 'localhost:8080'
