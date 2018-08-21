@@ -1,5 +1,7 @@
 # Docker-Laravel Boilerplate
 
+[![Build Status](https://travis-ci.com/mtslzr/docker-laravel-boilerplate.svg?branch=master)](https://travis-ci.com/mtslzr/docker-laravel-boilerplate)
+
 ## What is it?
 
 This is a pre-packaged setup for Laravel that deploys Docker containers for PHP, Nginx, and Maria to quickly enable local Laravel development.
