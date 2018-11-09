@@ -33,6 +33,7 @@ docker-compose up
 Once running, you'll need to generate a key (only for the first run) with artisan.
 
 ```bash
+docker exec -ti laravel-app php composer.phar update 
 docker exec -ti laravel-app php artisan key:generate
 ```
 
@@ -44,4 +45,4 @@ Website will be available at http://localhost:8080.
 * Laravel (5.6.12)
 * MariaDB (10.3.x)
 * Nginx
-* PHP (7.x)
+* PHP (7.x w/ Composer 1.7.3)
