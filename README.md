@@ -33,6 +33,7 @@ docker-compose up
 Once running, you'll need to generate a key (only for the first run) with artisan.
 
 ```bash
+docker exec -ti laravel-app php composer.phar update 
 docker exec -ti laravel-app php artisan key:generate
 ```
 
