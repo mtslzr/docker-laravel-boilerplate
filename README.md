@@ -1,5 +1,9 @@
 # Docker-Laravel Boilerplate
 
+*NOTICE: This repo is not really maintained, and was built for testing purposes.*
+
+*For an up-to-date implementation of Laravel in Docker, check out [Laradock](https://github.com/laradock/laradock) or [Vessel](https://github.com/shipping-docker/vessel).*
+
 [![Build Status](https://travis-ci.com/mtslzr/docker-laravel-boilerplate.svg?branch=master)](https://travis-ci.com/mtslzr/docker-laravel-boilerplate)
 
 ## What is it?
