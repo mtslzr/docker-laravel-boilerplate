@@ -46,7 +46,7 @@ Website will be available at http://localhost:8080.
 ## Specs
 
 * Docker
-* Laravel (5.6.12)
-* MariaDB (10.3.x)
+* Laravel (5.8)
+* MariaDB (10.5)
 * Nginx
-* PHP (7.x w/ Composer 1.7.3)
+* PHP (7.4 w/ Composer 1.7.3)
